@@ -109,22 +109,35 @@ website:   	http://www.themepunch.com
 			font-weight: 500;
 			font-size: 14px;
 			line-height: 20px;
-  			font-family: 'Ubuntu';
+  			/*font-family: 'Ubuntu';*/
 			margin: 0px;
 			border-width: 0px;
 			border-style: none;
 			white-space:nowrap;
 			text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 		}
-
+.tp-caption.large_text{
+			position: absolute;
+			color: #fff;
+			text-shadow: none;
+			font-weight: 500;
+			font-size: 28px;
+			line-height: 28px;
+  			/*font-family: 'Ubuntu';*/
+			margin: 0px;
+			border-width: 0px;
+			border-style: none;
+			white-space:nowrap;
+			text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+		}
 .tp-caption.medium_text{
 			position: absolute;
 			color: #fff;
 			text-shadow: none;
 			font-weight: 300;
-			font-size: 20px;
-			line-height: 20px;
-			font-family: 'Open Sans', sans;
+			font-size: 16px;
+			line-height: 16px;
+  			/*font-family: 'Ubuntu';*/
 			margin: 0px;
 			border-width: 0px;
 			border-style: none;
@@ -161,20 +174,7 @@ website:   	http://www.themepunch.com
 			text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 		}
 /* ----------------------------------------- */
-.tp-caption.large_text{
-			position: absolute;
-			color: #fff;
-			text-shadow: none;
-			font-weight: 500;
-			font-size: 28px;
-			line-height: 30px;
-  			font-family: 'Ubuntu';
-			margin: 0px;
-			border-width: 0px;
-			border-style: none;
-			white-space:nowrap;
-			text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-		}
+
 .tp-caption.large_black_text{
 			position: absolute;
 			color: #000;
@@ -399,11 +399,19 @@ website:   	http://www.themepunch.com
 	}
 
 .tp-caption a {
-	color: #ff7302; text-shadow: none;	-webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out;
+	margin-top: 10px !important;
+	color: #FFFFFF;
+	text-shadow: none;
+	text-decoration: underline !important;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
 }
 
 .tp-caption a:hover {
-	color: #ffa902;
+	color: #ffffff;
+	text-decoration: underline;
 }
 
 
@@ -536,7 +544,12 @@ website:   	http://www.themepunch.com
 *************************************************/
 .tp-simpleresponsive .caption,
 .tp-simpleresponsive .tp-caption {
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";	-moz-opacity: 0;	-khtml-opacity: 0;	opacity: 0; position:absolute; visibility: hidden;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+	position:absolute;
+	visibility: hidden;
 
 }
 

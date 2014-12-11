@@ -33,8 +33,8 @@ var tpj=jQuery;
                 navigationHAlign:"center",				// Vertical Align top,center,bottom
                 navigationVAlign:"top",					// Horizontal Align left,center,right
                 navigationHOffset:0,
-//                navigationVOffset:20,
-                navigationVOffset:366,
+                navigationVOffset:20,
+//                navigationVOffset:366,
 
                 soloArrowLeftHalign:"left",
                 soloArrowLeftValign:"center",

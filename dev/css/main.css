@@ -530,6 +530,9 @@ body {
 .tp-bullets.simplebullets.round .bullet {
   margin-left: 6px;
 }
+.tp-bullets {
+  margin-top: 350px;
+}
 /* -------= custom media querie for slider  =------- */
 @media screen and (max-width: 754px) and (min-width: 10px) {
   .tp-bullets.simplebullets.round .bullet {
@@ -537,27 +540,11 @@ body {
   }
 }
 /* -------= custom media querie for slider  =------- */
-.my-slider-text-settings {
+.fullwidthbanner {
   font-family: 'Ubuntu' !important;
-  font-size: 14px !important;
-  color: #ffffff !important;
 }
-.my-slider-text-settings p {
-  padding: 0;
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-.my-slider-text-settings p br {
-  margin-bottom: 0;
-}
-.my-slider-text-settings .my-slider-text-header {
-  font-size: 30px;
-  padding: 0;
-  margin-top: 10px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 7px;
-  line-height: normal;
+.slider-p-reset p {
+  margin: 0;
 }
 .my-slider-link-settings {
   color: #ffffff !important;
