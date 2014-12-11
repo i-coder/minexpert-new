@@ -1,0 +1,1135 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* author = taksenov@gmail.com */
+/* MainSettings */
+@import "mixins";
+@import "fonts";
+@import "button";
+@import "rating";
+@import "menuservices";
+@import "serviceinfo";
+
+
+/* -------= размеры =------- */
+@container-width : 1140px;
+@logo-height : 50px;
+//@footer-height   : 100%;
+//@footer-height   : 160px;
+//@body-font       : "MyriadPro-Regular";
+/* -------= размеры =------- */
+
+/* -------= цвета используемые на странице =------- */
+@black-color : #1a1a1a;
+@gray-color : #7f7f7f;
+@red-color : #7b0404;
+@lemon-color : #c6b108;
+@lightyellow-color : #fff5a3;
+@footer-color : #282828;
+@footer-text-color : #ffffff;
+@main-dark-color : #282828;
+@main-text-color : #ffffff;
+@menu-active-color : #df1f26;
+@menu-services-color : #dfdfdf;
+@footer-mainheader-color : #767676;
+/* -------= цвета используемые на странице =------- */
+
+/* -------= примесь для черной рамки =------- */
+.border123 {
+    border: 1px solid #000000;
+}
+/* -------= примесь для черной рамки =------- */
+
+/* -------= адаптивный футер =------- */
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.ns_footer {
+    background-color: @footer-color;
+    color: @footer-text-color;
+}
+/* -------= адаптивный футер =------- */
+ul {
+    padding: 0;
+    margin: 0;
+    li {
+        margin-top: 10px;
+        padding: 0;
+        left: 0;
+        list-style: none outside none;
+    }
+}
+p {
+    padding: 0;
+    margin-top: 20px;
+}
+br {
+    margin-bottom: 30px;
+}
+body{
+    background: #ffffff;
+}
+/* ------------------------------------------- */
+
+
+/* -------= logoblock =------- */
+.logoblock__phone_margintop {
+    margin-top: 37px;
+}
+.logoblock__img_margintop {
+    margin-top: 29px;
+    margin-bottom: 29px;
+}
+.logoblock__reg_margintop {
+    margin-top: 39px;
+}
+.ns_logoblock__logo {
+    height: @logo-height;           //Внимание здесь задана высота логотипа для сверхмалых экранов
+    position: relative;
+    .ns_logo-centered {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        .clearfix;
+    }
+}
+.ns_phone-number {
+    span {
+        .ubuntu-m;
+        font-size: 24px;
+        line-height: 24px;
+        color: @main-dark-color;
+    }
+}
+.ns_phone-link {
+    a {
+        .ubuntu;
+	    font-size: 14px;
+        text-decoration: underline;
+        color: @main-dark-color;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+.login {
+    /*
+    @width: 68px,              = ширина
+    @height: 28px,             = высота
+    @img: none,                = картинка иконки
+    @bradius: 3px,             = радиус уголков
+    @bg-color: #17709a,        = цвет фона
+    @hover-bg-color: #17709a,  = цвет фона при ховере
+    @font-color: #ffffff       = цвет шрифта
+     */
+    text-transform: uppercase;
+    .original-button (
+        60px,
+        28px,
+        none,
+        none,
+        #ffffff,
+        #ffffff,
+        //#282828
+        #808080
+    );
+    &:hover {
+        color: #282828;
+    }
+}
+.register {
+    /*
+    @width: 68px,              = ширина
+    @height: 28px,             = высота
+    @img: none,                = картинка иконки
+    @bradius: 3px,             = радиус уголков
+    @bg-color: #17709a,        = цвет фона
+    @hover-bg-color: #17709a,  = цвет фона при ховере
+    @font-color: #ffffff       = цвет шрифта
+     */
+    text-transform: uppercase;
+    .original-button (
+        106px,
+        28px,
+        none,
+        none,
+        #ffd84f,
+        #ffc702,
+        #282828
+    );
+}
+.logoblock__margin-top_10px {
+    margin-top: 10px;
+}
+.logoblock__margin-bottom_10px {
+    margin-bottom: 10px;
+}
+/* -------= logoblock =------- */
+
+/* -------= navbar =------- */
+@navbar__labels-heigth: 36px;
+/*.ns_navbar {
+    background-color: @main-dark-color;
+    z-index: 1000;
+}*/
+.navbar-delete-styles {
+    //background-color: transparent;
+    background-color: @main-dark-color;
+    border-color: transparent;
+    min-height: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    z-index: 1000;
+}
+.navbar-custom {
+    border: none;
+    border-radius: 0;
+    min-height: @navbar__labels-heigth;
+    background-color: @main-dark-color;
+    border-color: transparent;
+    z-index: 1000;
+
+    text-transform: uppercase;
+    .ubuntu-m;
+
+    margin: 0;
+    width: auto;
+    height: @navbar__labels-heigth;
+
+    ul {
+       .clearfix;
+    }
+    ul li {
+        float: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: @navbar__labels-heigth;
+    }
+    ul li a {
+        padding-left: 12px;
+        padding-right: 12px;
+        height: @navbar__labels-heigth;
+        line-height: @navbar__labels-heigth;
+        color: @main-text-color;
+        text-decoration: none;
+        display: block;
+
+        font-size: 14px;
+        &:hover {
+            background-color: #424242;
+        }
+    }
+}
+.menu-link_active {
+    background-color: @menu-active-color;
+}
+.navbar__no-padding_right_left {
+    padding-left: 0;
+    padding-right: 0;
+}
+.ns_navbar__menu {
+    background-color: @main-dark-color;
+
+    li a {
+        padding-top: 0;
+        padding-bottom: 0;
+        color: @main-text-color !important;
+
+        &:hover {
+            background-color: #424242 !important;
+        }
+    }
+}
+.navbar-button_custom {
+    margin: 0;
+    margin-top: 1px;
+}
+/* -------= custom media querie for navbar  =------- */
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+    .navbar-custom,
+    .ns_navbar {
+        height: @navbar__labels-heigth * 2;
+    }
+}
+/* -------= custom media querie for navbar  =------- */
+/* -------= navbar =------- */
+
+/* -------= slider =------- */
+.tp-bullets.simplebullets.round .bullet {
+    margin-left: 6px;
+}
+/* -------= custom media querie for slider  =------- */
+@media screen and (max-width: 754px) and (min-width: 10px) {
+    .tp-bullets.simplebullets.round .bullet {
+        display: none;
+    }
+}
+/* -------= custom media querie for slider  =------- */
+// lg
+.my-slider-text-settings {
+    .ubuntu !important;
+    font-size: 14px !important;
+    color: @main-text-color !important;
+    p {
+        padding: 0;
+        margin-top: 22px;
+        margin-bottom: 22px;
+
+        br {
+            margin-bottom: 0;
+        }
+    }
+    .my-slider-text-header {
+        font-size: 30px;
+        padding: 0;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 7px;
+        line-height: normal;
+    }
+}
+.my-slider-link-settings {
+    color: @main-text-color !important;
+    text-decoration: underline !important;
+}
+
+/* -------= slider =------- */
+
+/* -------= menu services =------- */
+@slider-height : 90px;
+.ns_services {
+    min-height: @slider-height;
+    background-color: @menu-services-color;
+}
+.ns_services__property {
+    z-index: 0;
+    min-height: @slider-height;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+//здесь используется примесь из файла menuservices.less
+.service-link_callback {
+    .original-service-link (@img1: url('../../static/img/common/smartphone.png'), @img2: url('../../static/img/common/wsmartphone.png'));
+}
+.service-link_calc {
+    .original-service-link (@img1: url('../../static/img/common/calc.png'), @img2: url('../../static/img/common/wcalc.png'));
+}
+.service-link_order {
+    .original-service-link (@img1: url('../../static/img/common/convert.png'), @img2: url('../../static/img/common/wconvert.png'));
+}
+.service-link_consult {
+    .original-service-link (@img1: url('../../static/img/common/bubble.png'), @img2: url('../../static/img/common/wbubble.png'));
+}
+/* -------= menu services =------- */
+
+/* -------= service info =------- */
+@service-info-height: 438px;
+@service-info-caption-height: 138px;
+@service-info-thumbs-height: 300px;
+.ns_serviceinfo {
+    min-height: @service-info-height;
+}
+.ns_serviceinfo__caption-large {
+    max-height: @service-info-caption-height;
+    text-align: center;
+    line-height: @service-info-caption-height;
+    text-transform: uppercase;
+    .ubuntu-m;
+    font-size: 24px;
+}
+.ns_serviceinfo__caption-small {
+    max-height: 80px;
+    text-align: center;
+    line-height: 80px;
+    text-transform: uppercase;
+    .ubuntu-m;
+    font-size: 18px;
+}
+.ns_serviceinfo__thumbs {
+    min-height: @service-info-thumbs-height;
+}
+.hex-pencil-img__link {
+    text-decoration: none !important;
+    .original-service-info (@img1: url('../../static/img/common/pencilhex.png'), @img2: url('../../static/img/common/rpencilhex.png'), 158px);
+}
+.hex-plane-img__link {
+    text-decoration: none !important;
+    .original-service-info (@img1: url('../../static/img/common/planehex.png'), @img2: url('../../static/img/common/rplanehex.png'), 158px);
+}
+.hex-blank-img__link {
+    text-decoration: none !important;
+    .original-service-info (@img1: url('../../static/img/common/blankhex.png'), @img2: url('../../static/img/common/rblankhex.png'), 158px);
+}
+.hex-serviceinfo-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    .ubuntu-m;
+    font-size: 14px;
+    p {
+        text-align: center;
+    }
+}
+.hover-text {
+    color: @main-dark-color;
+    text-decoration: none;
+
+    &:hover {
+        .hex-serviceinfo-text p {
+            color: @menu-active-color;
+            text-decoration: none;
+        }
+    }
+}
+.ns_service__margbot90 {
+    margin-bottom: 90px;
+}
+/* -------= service info =------- */
+
+/* -------= main content =------- */
+.divider-border {
+    border-bottom: 2px solid @main-dark-color;
+}
+.header-text {
+    .ubuntu-m;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+.ns_maincontent__margin-bottom {
+    margin-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.elements-marginbottom_--px {
+    margin-bottom: 16px;
+}
+.news-marginbottom_--px {
+    margin-bottom: 40px;
+}
+.no-top-onl-botm-margin {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.all-news {
+    /*
+    @width: 68px,              = ширина
+    @height: 28px,             = высота
+    @img: none,                = картинка иконки
+    @bradius: 3px,             = радиус уголков
+    @bg-color: #17709a,        = цвет фона
+    @hover-bg-color: #17709a,  = цвет фона при ховере
+    @font-color: #ffffff       = цвет шрифта
+     */
+    text-transform: uppercase;
+    .original-button (
+        162px,
+        25px,
+        none,
+        none,
+        #ffd84f,
+        #ffc702,
+        #282828
+    );
+    margin-top: -2px;
+}
+.abouttext {
+    .ubuntu;
+    font-size: 14px;
+}
+.aboutheader {
+    font-weight: 600;
+}
+/* примесь для картинки в меню работайте с нами */
+.wwu-img (@img: none ) {
+    text-align: center;
+        width: 38px;
+
+    &:before {
+        content: "";
+        width: 38px;
+        height: 38px;
+        .inlineblock;
+        background: @img center center no-repeat;
+    }
+}
+/* примесь для картинки в меню работайте с нами */
+.wwu-img-bubble {
+    .wwu-img (url('../../static/img/common/wwu-bubble.png'));
+}
+.wwu-img-star {
+    .wwu-img (url('../../static/img/common/wwu-star.png'));
+}
+.wwu-img-hat {
+    .wwu-img (url('../../static/img/common/wwu-hat.png'));
+}
+.wwu-img-watch {
+    .wwu-img (url('../../static/img/common/wwu-watch.png'));
+}
+.wwu-img-user {
+    .wwu-img (url('../../static/img/common/wwu-user.png'));
+}
+.wwu-img-like {
+    .wwu-img (url('../../static/img/common/wwu-like.png'));
+}
+.elements-text-decor {
+    .ubuntu-m;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.news-image {
+    overflow: hidden;
+    height: 180px;
+    width: 263px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.news-image > img {
+    max-width: 100%;
+    display: inline-block;
+}
+.news-date {
+    .ubuntu-m;
+    font-size: 14px;
+    color: #aaaaaa;
+    text-decoration: none;
+}
+.news-text {
+    text-decoration: none;
+    text-transform: uppercase;
+    .ubuntu-m;
+    font-size: 14px;
+    color: #4b4b4b;
+}
+.news-link {
+    text-decoration: none !important;
+    &:hover {
+
+        .news-image {
+            opacity:0.9;
+            -moz-opacity:0.9;
+            filter: alpha(opacity=90);
+            -khtml-opacity: 0.9;
+        }
+
+        .news-date {
+            color: #747474;
+            text-decoration: none;
+        }
+        .news-text {
+            color: #c1252a;
+            text-decoration: none;
+        }
+    }
+}
+.no_padleft-right {
+    padding-left: 0;
+    padding-right: 0;
+}
+.no_padright-15 {
+    padding-right: 0;
+}
+.col-85pr {
+    width: 85%;
+}
+/* -------= main content =------- */
+
+/* -------= customers feedback =------- */
+.bx-controls, .bx-has-pager,
+.bx-pager, .bx-default-pager {
+    display: none !important;
+    visibility: hidden;
+}
+.bx-wrapper .bx-viewport {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: none;
+ //   background-color: #f4f4f4;
+    border: 5px solid transparent;
+}
+.ns_ourcustomers {
+    background-color: #f4f4f4;
+}
+.ourcustomers-prev {
+    float: left;
+    margin-left: -20px;
+    height: 70px;
+    line-height: 70px;
+
+    img {
+        opacity:0.3;
+        -moz-opacity:0.3;
+        filter: alpha(opacity=30);
+        -khtml-opacity: 0.3;
+
+        &:hover {
+            opacity: 1;
+            -moz-opacity: 1;
+            filter: alpha(opacity=100);
+            -khtml-opacity: 1;
+        }
+    }
+
+}
+.customersfeedback-prev {
+    margin-left: -20px !important;
+}
+.bx-wrapper {
+    float: left;
+    margin-left: 30px;
+}
+.ourcustomers-next {
+    float: left;
+    height: 70px;
+    line-height: 70px;
+    margin-right: -20px;
+
+    img {
+        opacity:0.3;
+        -moz-opacity:0.3;
+        filter: alpha(opacity=30);
+        -khtml-opacity: 0.3;
+
+        &:hover {
+            opacity: 1;
+            -moz-opacity: 1;
+            filter: alpha(opacity=100);
+            -khtml-opacity: 1;
+        }
+    }
+}
+.ourcustomers-prev-feedback {
+    margin-top: 45px;
+    float: left;
+    margin-left: -20px;
+    height: 70px;
+    line-height: 70px;
+
+    img {
+        opacity:0.5;
+        -moz-opacity:0.5;
+        filter: alpha(opacity=50);
+        -khtml-opacity: 0.5;
+
+        &:hover {
+            opacity: 1;
+            -moz-opacity: 1;
+            filter: alpha(opacity=100);
+            -khtml-opacity: 1;
+        }
+    }
+
+}
+.ourcustomers-next-feedback {
+    margin-top: 45px;
+    float: left;
+    height: 70px;
+    line-height: 70px;
+    margin-right: -20px;
+
+    img {
+        opacity:0.5;
+        -moz-opacity:0.5;
+        filter: alpha(opacity=50);
+        -khtml-opacity: 0.5;
+
+        &:hover {
+            opacity: 1;
+            -moz-opacity: 1;
+            filter: alpha(opacity=100);
+            -khtml-opacity: 1;
+        }
+    }
+}
+.customername {
+    .ubuntu;
+    font-size: 14px;
+    font-weight: 600;
+}
+.customerposition {
+    .ubuntu;
+    font-size: 14px;
+    text-transform: none;
+}
+.customerfeedback__header {
+    padding-bottom: 15px;
+    border-bottom: 2px solid #cb2026;
+    padding-left: 0;
+}
+.customerfeedback__padbottom15px {
+    padding-bottom: 15px;
+}
+.slider__margbot {
+    margin-bottom: 40px;
+}
+.no-top-margin {
+    margin-top: 0;
+}
+.feedback-margbot {
+    margin-bottom: 16px;
+}
+/* -------= customers feedback =------- */
+
+/* -------= fastlinks =------- */
+.ns_fastlinks {
+    min-height: 242px;
+    background: url('../../static/img/common/bg-pattern-footer.png') repeat #721a1a;
+    padding-bottom: 47px;
+}
+.ns_fastlinks__property {
+    color: @main-text-color;
+    margin-top: 46px;
+}
+.ns_fastlinks__header {
+    font-size: 12px;
+    .ubuntu-m;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.ns_fastlinks__text {
+    font-size: 12px;
+    .ubuntu;
+
+    p {
+        margin-top: 12px;
+    }
+
+    .fastlink {
+        text-decoration: none !important;
+        color: @main-text-color;
+
+        &:hover {
+            text-decoration: underline !important;
+        }
+    }
+}
+.xs-sm-margintop {
+    margin-top: 45px;
+}
+/* -------= fastlinks =------- */
+
+/* -------= footer =------- */
+.ns_footer {
+    min-height: 297px;
+    padding-bottom: 44px;
+}
+.ns_footer__property {
+    margin-top: 47px;
+}
+.footer__office-header {
+    .ubuntu-m;
+    font-size: 30px;
+    color: @footer-mainheader-color;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: -8px;
+
+}
+.address-header {
+    .ubuntu-m;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.address-text {
+    .ubuntu;
+    font-size: 12px;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+.anchor {
+    .clearfix;
+    margin-top: 40px;
+}
+.anchor__logo {
+    float: left;
+}
+.anchor__text {
+    margin-left: 17px;
+    float: left;
+    .ubuntu;
+    font-size: 12px;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: underline;
+        color: @main-text-color;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+.footer__address {
+    margin-bottom: 21px;
+}
+.xs-sm-margin-bottom50 {
+    margin-bottom: 50px;
+}
+/* -------= footer =------- */
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
