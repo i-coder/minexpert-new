@@ -527,29 +527,21 @@ body {
 /* -------= custom media querie for navbar  =------- */
 /* -------= navbar =------- */
 /* -------= slider =------- */
-.tp-bullets.simplebullets.round .bullet {
-  margin-left: 6px;
+/*.tp-bullets.simplebullets.round .bullet {
+    margin-left: 6px;
 }
 .tp-bullets {
-  margin-top: 350px;
+    margin-top: 350px;
 }
+*/
 /* -------= custom media querie for slider  =------- */
+/*
 @media screen and (max-width: 754px) and (min-width: 10px) {
-  .tp-bullets.simplebullets.round .bullet {
-    display: none;
-  }
-}
+    .tp-bullets.simplebullets.round .bullet {
+        display: none;
+    }
+}*/
 /* -------= custom media querie for slider  =------- */
-.fullwidthbanner {
-  font-family: 'Ubuntu' !important;
-}
-.slider-p-reset p {
-  margin: 0;
-}
-.my-slider-link-settings {
-  color: #ffffff !important;
-  text-decoration: underline !important;
-}
 /* -------= bootstrap native slider =------- */
 .my-left-control {
   background-image: none !important;
