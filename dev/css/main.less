@@ -377,22 +377,15 @@ body{
 
 
 /* -------= bootstrap native slider =------- */
-.my-left-control {
-    background-image: none !important;
-    z-index: 1000;
 
+/*черная полоска в слайдере*/
+.carousel{
+    margin-top: -1px;
 }
-.my-right-control {
-    background-image: none !important;
-    z-index: 1000;
-}
-.carousel-control:hover,
-.carousel-control:focus {
-  color: #FFFFFF !important;
-  text-decoration: none;
-  filter: alpha(opacity=90) !important;
-  outline: 0;
-  opacity: 0.9;
+/*черная полоска в слайдере*/
+
+.carousel-caption {
+    text-shadow: none;
 }
 .q_peopleCarousel {
     max-height: 397px;
@@ -408,6 +401,9 @@ body{
         right: 1%;
         left: 1%;
         padding-bottom: 30px;
+    }
+    .carousel-indicators {
+        bottom: 4px !important;
     }
 }
 
