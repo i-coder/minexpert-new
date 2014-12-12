@@ -360,24 +360,8 @@ body{
 /* -------= navbar =------- */
 
 /* -------= slider =------- */
-/*.tp-bullets.simplebullets.round .bullet {
-    margin-left: 6px;
-}
-.tp-bullets {
-    margin-top: 350px;
-}
-*//* -------= custom media querie for slider  =------- *//*
-@media screen and (max-width: 754px) and (min-width: 10px) {
-    .tp-bullets.simplebullets.round .bullet {
-        display: none;
-    }
-}*/
-/* -------= custom media querie for slider  =------- */
-
-
 
 /* -------= bootstrap native slider =------- */
-
 /*черная полоска в слайдере*/
 .carousel{
     margin-top: -1px;
@@ -387,17 +371,10 @@ body{
 .carousel-caption {
     text-shadow: none;
 }
-.q_peopleCarousel {
-    max-height: 397px;
-    overflow: hidden;
 
-}
-.q_peopleCarouselImg {
-    width: 100%;
-    height: 100%;
-}
+
 @media screen and (min-width: 768px) {
-    .my-carousel-caption {
+.my-carousel-caption {
         right: 1%;
         left: 1%;
         padding-bottom: 30px;
@@ -408,14 +385,46 @@ body{
 }
 
 @media screen and (min-width: 1201px) {
-    .my-carousel-caption {
-        position: absolute;
-        right: 1%;
-        left: 1%;
-        top: 20%;
+
+    .q_peopleCarousel {
+        //min-height: 160px;
+        max-height: 397px;
+        overflow: hidden;
+
+        position: relative;
+
+        .my-carousel-caption {
+            position: absolute;
+            right: 1%;
+            left: 1%;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
     }
-    .slider-red-block {
+
+
+    .q_peopleCarouselImg {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .transJumbotron {
+        opacity:0.95;
+        filter:alpha(opacity=95);
+        -moz-opacity:0.95;
         background-color: #ca2428;
+        width:100%;
+        height:100%;
+        position:absolute;
+        margin-left: -37px;
+        z-index:-1;
+    }
+
+    .slider-red-block {
+        /*background-color: #ca2428;*/
         text-align: left;
         margin-left: 15px;
         padding-left: 37px;
@@ -453,14 +462,53 @@ body{
     }
 }
 @media screen and (min-width: 993px) and (max-width: 1200px) {
+
+
+    .q_peopleCarousel {
+        min-height: 360px;
+        max-height: 397px;
+        overflow: hidden;
+
+        position: relative;
+
+        img {
+            display: block;
+            height: auto;
+            max-height: 360px;
+            max-width: none !important;
+        }
+    }
+
+    .q_peopleCarousel {
+        //min-height: 160px;
+        max-height: 397px;
+        overflow: hidden;
+
+    }
+    .q_peopleCarouselImg {
+        /*width: 100%;*/
+        height: 100%;
+    }
+
     .my-carousel-caption {
         position: absolute;
         right: 1%;
         left: 10%;
         top: 5%;
     }
-    .slider-red-block {
+    .transJumbotron {
+        opacity:0.95;
+        filter:alpha(opacity=95);
+        -moz-opacity:0.95;
         background-color: #ca2428;
+        width:100%;
+        height:100%;
+        position:absolute;
+        margin-left: -8px;
+        z-index:-1;
+    }
+    .slider-red-block {
+        /*background-color: #ca2428;*/
         text-align: left;
         margin-left: 8px;
         padding-left: 16px;
@@ -498,14 +546,57 @@ body{
     }
 }
 @media screen and (min-width: 769px) and (max-width: 993px) {
+
+
+    .q_peopleCarousel {
+        min-height: 300px;
+        max-height: 397px;
+        overflow: hidden;
+
+
+        position: relative;
+
+
+
+        img {
+            display: block;
+            height: auto;
+            max-height: 300px;
+            max-width: none !important;
+        }
+    }
+
+
+    .q_peopleCarousel {
+        //min-height: 160px;
+        max-height: 397px;
+        overflow: hidden;
+
+    }
+    .q_peopleCarouselImg {
+        /*width: 100%;*/
+        height: 100%;
+    }
+
     .my-carousel-caption {
         position: absolute;
         right: 1%;
         left: 10%;
         top: 5%;
     }
-    .slider-red-block {
+    .transJumbotron {
+        opacity:0.95;
+        filter:alpha(opacity=95);
+        -moz-opacity:0.95;
         background-color: #ca2428;
+        width:100%;
+        height:100%;
+        position:absolute;
+        margin-left: -8px;
+        z-index:-1;
+    }
+    .slider-red-block {
+        /*background-color: #ca2428;*/
         text-align: left;
         margin-left: 8px;
         padding-left: 16px;
@@ -543,30 +634,74 @@ body{
     }
 }
 @media screen and (max-width: 768px) {
+
+    .carousel-indicators {
+        bottom: -8px !important;
+    }
+
+
+    .q_peopleCarousel {
+        min-height: 240px;
+        max-height: 397px;
+        overflow: hidden;
+
+
+        position: relative;
+
+
+
+        img {
+            display: block;
+            height: auto;
+            max-height: 240px;
+            max-width: none !important;
+        }
+    }
+    .q_peopleCarouselImg {
+        /*width: 100%;*/
+        height: 100%;
+    }
+    .carousel-relative {
+
+    }
     .my-carousel-caption {
         position: absolute;
-        right: 1%;
-        left: 1%;
-        top: -15px;
+
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .transJumbotron {
+        opacity:0.95;
+        filter:alpha(opacity=95);
+        -moz-opacity:0.95;
+        background-color: #ca2428;
+        width:100%;
+        height:100%;
+        position:absolute;
+        margin-left: -6px;
+        z-index:-1;
     }
     .slider-red-block {
-        background-color: #ca2428;
+        /*background-color: #ca2428;*/
         text-align: left;
-        margin-left: 1px;
+        margin-left: 6px;
         padding-left: 1px;
     }
     .slider-red-block__header {
         .ubuntu-m;
-        font-size: 16px;
-        line-height: 16px;
-        margin-top: 3px;
-        margin-bottom: 3px;
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
     .slider-red-block__text {
         .ubuntu;
-        font-size: 10px;
-        line-height: 10px;
-        margin-bottom: 3px;
+        font-size: 15px;
+        line-height: 15px;
+        margin-bottom: 8px;
 
         .text_paragraph {
             margin: 0;
@@ -575,8 +710,8 @@ body{
     }
     .slider-red-block__text-link {
         .ubuntu;
-        font-size: 10px;
-        line-height: 10px;
+        font-size: 15px;
+        line-height: 15px;
         margin-bottom: 3px;
         a {
             color: @main-text-color;
