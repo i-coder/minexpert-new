@@ -1,0 +1,506 @@
+/* -------= imports =------- */
+@import "main";
+@import "serviceinfo";
+/* -------= imports =------- */
+
+/* -------= variables =------- */
+//@main-image-height: 397px;
+@main-image-height: 100vh;
+@main-image-min-height: 240px;
+@main-image-max-height: 397px;
+@dark-divider-height: 100vh;
+@dark-divider-min-height: 215px;
+@dark-divider-max-height: 215px;
+@dark-divider-color: #333333;
+@order-info-height: 583px;
+/* -------= variables =------- */
+
+/* -------= main image =------- */
+.main-image {
+    background: url('../../static/img/mainimg/main_epd.png') no-repeat center center /*fixed*/;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: @main-image-height;
+    min-height: @main-image-min-height;
+    max-height: @main-image-max-height;
+    z-index: -10;
+}
+.main-image__pattern {
+	background:url('../../static/img/mainimg/pattern.png');
+	background-repeat: repeat;
+	background-position: center center;
+    width: 100%;
+    height: @main-image-height;
+    min-height: @main-image-min-height;
+    max-height: @main-image-max-height;
+    z-index: -9;
+}
+
+/*средние экраны*/
+@media screen and (min-width: 769px) and (max-width: 993px) {
+    .main-image {
+        height: 100%;
+    }
+    .main-image__pattern {
+        height: 100%;
+    }
+}
+/*средние экраны*/
+
+/*-- телефоны --*/
+@media screen and (max-width: 768px) {
+    .main-image {
+        height: 100%;
+    }
+    .main-image__pattern {
+        height: 100%;
+    }
+    .red-transporant__text p span {
+        font-size: 20px;
+    }
+}
+/*-- телефоны --*/
+
+.no-rl-pad {
+    padding-left: 0;
+    padding-right: 0;
+
+}
+.main-image__capiton {
+    margin-top: 10%;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: -15px;
+    padding-right: -15px;
+}
+.red-transporant__text {
+
+    font-size: 30px;
+    color: @main-text-color;
+        .ubuntu-b;
+        text-transform: uppercase;
+        text-align: center;
+    p {
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+    .test-p {
+       z-index: 100;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        opacity:0.95;
+        filter:alpha(opacity=95);
+        -moz-opacity:0.95;
+        background-color: @menu-active-color;
+        height:100%;
+    }
+}
+
+/* -------= main image =------- */
+
+/* -------= simple text =------- */
+.simple-text__thistext {
+    .ubuntu;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0;
+    margin-top: 60px;
+}
+.ns_our-advantages {
+    margin-top: 38px;
+    margin-bottom: 50px;
+}
+.ns_serviceinfo__caption-large_nolineheight {
+
+    text-transform: uppercase;
+    .ubuntu-m;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    p {
+        margin: 0;
+    }
+
+    margin-bottom: 45px;
+}
+.ns_serviceinfo__caption-small_nolineheight {
+
+    text-transform: uppercase;
+    .ubuntu-m;
+    font-size: 18px;
+    text-align: center;
+
+    p {
+        margin: 0;
+    }
+
+    margin-bottom: 15px;
+}
+/* -------= simple text =------- */
+
+/* -------= our advantages =------- */
+.our-advantages-header {
+    margin: 0;
+    padding: 0;
+    .ubuntu;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.our-advantages-text {
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    .ubuntu;
+    font-size: 14px;
+}
+.our-advantages_modificator {
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+.width-hack {
+    width: 100% !important;
+}
+/* примесь для картинки в меню преимущества */
+.wwu-img-globus {
+    .wwu-img (url('../../static/img/common/wwu-globus.png'));
+}
+.wwu-img-fire {
+    .wwu-img (url('../../static/img/common/wwu-fire.png'));
+}
+/* примесь для картинки в меню преимущества */
+/* -------= our advantages =------- */
+
+/* -------= dark-divider =------- */
+.dark-divider {
+    background: @dark-divider-color no-repeat center center /*fixed*/;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height:     @dark-divider-height;
+    min-height: @dark-divider-min-height;
+    max-height: @dark-divider-max-height;
+    z-index: -10;
+}
+.dark-divider__pattern {
+	background:url('../../static/img/darkdivider/pattern2.png');
+	background-repeat: repeat;
+	background-position: center center;
+    width: 100%;
+    height:     @dark-divider-height;
+    min-height: @dark-divider-min-height;
+    max-height: @dark-divider-max-height;
+    z-index: -9;
+}
+.backcall-button {
+    /*
+    @width: 68px,              = ширина
+    @height: 28px,             = высота
+    @img: none,                = картинка иконки
+    @bradius: 3px,             = радиус уголков
+    @bg-color: #17709a,        = цвет фона
+    @hover-bg-color: #17709a,  = цвет фона при ховере
+    @font-color: #ffffff       = цвет шрифта
+     */
+    text-transform: uppercase;
+    .original-button (
+        247px,
+        42px,
+        none,
+        none,
+        #cb2026,
+        #ad1c22,
+        #ffffff
+    );
+
+}
+.dark-divider__text {
+    color: @main-text-color;
+    .ubuntu;
+    font-size: 18px;
+}
+.dark-divider__text_phone {
+    font-weight: 600;
+}
+.dark-divider__text-align_mod {
+    text-align: center;
+}
+.dark-divider__mainrow {
+    margin-top: 5%;
+    margin-bottom: 25px;
+}
+.dark-divider__buttonrow {
+
+}
+/*-- телефоны --*/
+@media screen and (max-width: 768px) {
+.dark-divider {
+    height:     @dark-divider-height + 100px;
+    min-height: @dark-divider-min-height + 100px;
+    max-height: @dark-divider-max-height + 100px;
+}
+.dark-divider__pattern {
+    height:     @dark-divider-height + 100px;
+    min-height: @dark-divider-min-height + 100px;
+    max-height: @dark-divider-max-height + 100px;
+}
+}
+/*-- телефоны --*/
+/* -------= dark-divider =------- */
+
+/* -------= order info =------- */
+.ns_orderinfo_1stback {
+    background: url('../../static/img/orderinfo/bg-1st.png') no-repeat center center /*fixed*/;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+//    height:     @dark-divider-height;
+    min-height: @order-info-height;
+    max-height:  @order-info-height * 5;
+    z-index: -10;
+}
+.ns_orderinfo_2ndback {
+	background:url('../../static/img/orderinfo/bg-2nd.png');
+	background-repeat: repeat;
+	background-position: center center;
+    width: 100%;
+    min-height: @order-info-height;
+    max-height:  @order-info-height * 5;
+    z-index: -9;
+}
+.ns_orderinfo_3rdback {
+	background:url('../../static/img/orderinfo/bg-3rd.png');
+	background-repeat: repeat;
+	background-position: center center;
+    width: 100%;
+    min-height: @order-info-height;
+    max-height:  @order-info-height * 5;
+    z-index: -8;
+}
+.smallhex-1-img {
+    text-decoration: none !important;
+    .original-order-info2 (@img1: url('../../static/img/orderinfo/bubble-small-hex.png'), none, 102px);
+}
+.smallhex-2-img {
+    text-decoration: none !important;
+    .original-order-info2 (@img1: url('../../static/img/orderinfo/message-small-hex.png'), none, 102px);
+}
+.smallhex-3-img {
+    text-decoration: none !important;
+    .original-order-info2 (@img1: url('../../static/img/orderinfo/calc-small-hex.png'), none, 102px);
+}
+.smallhex-4-img {
+    text-decoration: none !important;
+    .original-order-info2 (@img1: url('../../static/img/orderinfo/money-small-hex.png'), none, 102px);
+}
+.smallhex-5-img {
+    text-decoration: none !important;
+    .original-order-info2 (@img1: url('../../static/img/orderinfo/search-small-hex.png'), none, 102px);
+}
+.smallhex-6-img {
+    text-decoration: none !important;
+    .original-order-info2 (@img1: url('../../static/img/orderinfo/pencil-small-hex.png'), none, 102px);
+}
+.smallhex-7-img {
+    text-decoration: none !important;
+    .original-order-info2 (@img1: url('../../static/img/orderinfo/checkbox-small-hex.png'), none, 102px);
+}
+.smallhex-8-img {
+    text-decoration: none !important;
+    .original-order-info2 (@img1: url('../../static/img/orderinfo/database-small-hex.png'), none, 102px);
+}
+.hex-orderinfo-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    .ubuntu-m;
+    font-size: 12px;
+    p {
+        text-align: center;
+        margin-top: 4px;
+    }
+}
+
+
+
+@media screen and (min-width: 1201px) {
+    .ns_orderinfo__thumbs {
+        min-height: 217px;
+    }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .ns_orderinfo__thumbs {
+        min-height: 276px;
+    }
+    .ns_orderinfo {
+        min-height: @order-info-height;
+        height: 760px;
+    }
+    .ns_orderinfo_1stback {
+        min-height: 760px;
+        max-height:  @order-info-height * 5;
+    }
+    .ns_orderinfo_2ndback {
+
+        min-height: 760px;
+        max-height:  @order-info-height * 5;
+    }
+    .ns_orderinfo_3rdback {
+        min-height: 760px;
+        max-height:  @order-info-height * 5;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 993px) {
+    .ns_orderinfo__thumbs {
+        min-height: 330px;
+    }
+    .ns_orderinfo {
+        min-height: @order-info-height;
+        height: 860px;
+    }
+    .ns_orderinfo_1stback {
+        min-height: 860px;
+        max-height:  @order-info-height * 5;
+    }
+    .ns_orderinfo_2ndback {
+
+        min-height: 860px;
+        max-height:  @order-info-height * 5;
+    }
+    .ns_orderinfo_3rdback {
+        min-height: 860px;
+        max-height:  @order-info-height * 5;
+    }
+}
+@media screen and (max-width: 768px) {
+    .ns_orderinfo__thumbs {
+        min-height: 217px;
+    }
+    .ns_orderinfo {
+        min-height: @order-info-height * 2;
+
+    }
+
+    .ns_orderinfo_1stback {
+        min-height: @order-info-height * 2;
+        max-height:  @order-info-height * 5;
+    }
+    .ns_orderinfo_2ndback {
+
+        min-height: @order-info-height * 2;
+        max-height:  @order-info-height * 5;
+    }
+    .ns_orderinfo_3rdback {
+        min-height: @order-info-height * 2;
+        max-height:  @order-info-height * 5;
+    }
+}
+.order-info-colxs-heitght {
+    min-height: 190px;
+    margin-bottom: 10px;
+}
+.ns_orderinfo__caption-large {
+    text-align: center;
+    text-transform: uppercase;
+    .ubuntu-m;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.ns_orderinfo__caption-small {
+    text-align: center;
+    text-transform: uppercase;
+    .ubuntu-m;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+/* -------= order info =------- */
+
+/* -------= expertise =------- */
+.ns_expertise__header {
+    .ubuntu-m;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 60px;
+
+
+}
+.ns_expertise__header-margbot {
+        margin-bottom: 40px;
+    }
+.ns_expertise-home-img {
+    text-decoration: none !important;
+    .original-order-info2 (@img1: url('../../static/img/expertise/home.png'), none, 102px);
+}
+.ns_expertise-building-img {
+    text-decoration: none !important;
+    .original-order-info2 (@img1: url('../../static/img/expertise/building.png'), none, 102px);
+}
+.ns_expertise-road-img {
+    text-decoration: none !important;
+    .original-order-info2 (@img1: url('../../static/img/expertise/road.png'), none, 102px);
+}
+.ns_expertise-cycle-img {
+    text-decoration: none !important;
+    .original-order-info2 (@img1: url('../../static/img/expertise/cycle.png'), none, 102px);
+}
+.expertise_text {
+    padding-top: 0;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    .ubuntu-m;
+    font-size: 12px;
+    p {
+        text-align: center;
+        margin-top: 4px;
+    }
+
+}
+.ns_expertise__list-text {
+    .ubuntu;
+    font-size: 14px;
+    line-height: 17px;
+}
+.ns_expertise__row-margbot {
+    margin-bottom: 40px;
+}
+@media screen and (min-width: 769px) and (max-width: 993px) {
+    .ns_expertise__xs-height {
+        min-height: 140px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .ns_expertise__xs-height {
+        min-height: 140px;
+    }
+}
+/* -------= expertise =------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
