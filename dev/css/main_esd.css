@@ -1,3 +1,4 @@
+/* -------= imports =------- */
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -1483,76 +1484,6 @@ textarea {
   margin-bottom: 50px;
 }
 /* -------= privilege =------- */
-/* -------= imports =------- */
-/* -------= imports =------- */
-/* -------= variables =------- */
-/* -------= variables =------- */
-/* -------= main image =------- */
-.main-image_esd {
-  background: url('../../static/img/mainimg/main_esd.png') no-repeat center center /*fixed*/;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  min-height: 240px;
-  max-height: 397px;
-  z-index: -10;
-}
-/* -------= main image =------- */
-/* -------= pluses and minuses =------- */
-.ns_pluses-minuses {
-  background-color: #f4f4f4;
-}
-.ns_pluses-minuses__margtopbot {
-  margin-bottom: 70px;
-  margin-top: 70px;
-}
-.ns_pluses-minuses__textdecor {
-  padding-left: 0;
-  padding-right: 0;
-  margin-bottom: 36px !important;
-}
-.ns_pluses-minuses__textdecor span br {
-  padding: 0;
-  margin: 0;
-}
-.wwu-img-dislike2 {
-  text-align: center;
-  width: 38px;
-}
-.wwu-img-dislike2:before {
-  content: "";
-  width: 38px;
-  height: 38px;
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1 !ie;
-  display: inline !ie;
-  background: url('../../static/img/common/wwu-dislike2.png') center center no-repeat;
-}
-.wwu-img-like2 {
-  text-align: center;
-  width: 38px;
-}
-.wwu-img-like2:before {
-  content: "";
-  width: 38px;
-  height: 38px;
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1 !ie;
-  display: inline !ie;
-  background: url('../../static/img/common/wwu-like2.png') center center no-repeat;
-}
-.ns_pluses-minuses__padleft30 {
-  padding-left: 30px;
-}
-.col-80pr {
-  width: 80%;
-}
-/* -------= pluses and minuses =------- */
 /* -------= размеры =------- */
 /* -------= размеры =------- */
 /* -------= цвета используемые на странице =------- */
@@ -3265,3 +3196,72 @@ body {
     page-break-after: avoid;
   }
 }
+/* -------= imports =------- */
+/* -------= variables =------- */
+/* -------= variables =------- */
+/* -------= main image =------- */
+.main-image_esd {
+  background: url('../../static/img/mainimg/main_esd.png') no-repeat center center /*fixed*/;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  min-height: 240px;
+  max-height: 397px;
+  z-index: -10;
+}
+/* -------= main image =------- */
+/* -------= pluses and minuses =------- */
+.ns_pluses-minuses {
+  background-color: #f4f4f4;
+}
+.ns_pluses-minuses__margtopbot {
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+.ns_pluses-minuses__textdecor {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 36px !important;
+}
+.ns_pluses-minuses__textdecor span br {
+  padding: 0;
+  margin: 0;
+}
+.wwu-img-dislike2 {
+  text-align: center;
+  width: 38px;
+}
+.wwu-img-dislike2:before {
+  content: "";
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+  display: inline !ie;
+  background: url('../../static/img/common/wwu-dislike2.png') center center no-repeat;
+}
+.wwu-img-like2 {
+  text-align: center;
+  width: 38px;
+}
+.wwu-img-like2:before {
+  content: "";
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+  display: inline !ie;
+  background: url('../../static/img/common/wwu-like2.png') center center no-repeat;
+}
+.ns_pluses-minuses__padleft30 {
+  padding-left: 30px;
+}
+.col-80pr {
+  width: 80%;
+}
+/* -------= pluses and minuses =------- */
