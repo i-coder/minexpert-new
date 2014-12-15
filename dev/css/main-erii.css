@@ -266,8 +266,9 @@ textarea {
   .main-image__pattern {
     height: 100%;
   }
-  .red-transporant__text p span {
+  .red-transporant__text h1 span {
     font-size: 20px;
+    margin-top: 10px;
   }
 }
 /*-- телефоны --*/
@@ -283,13 +284,13 @@ textarea {
   padding-right: -15px;
 }
 .red-transporant__text {
-  font-size: 30px;
   color: #ffffff;
   font-family: 'Ubuntu-Bold';
   text-transform: uppercase;
   text-align: center;
 }
-.red-transporant__text p {
+.red-transporant__text h1 {
+  font-size: 30px;
   margin-top: 0;
   margin-bottom: 8px;
 }
@@ -304,6 +305,23 @@ textarea {
   -moz-opacity: 0.95;
   background-color: #df1f26;
   height: 100%;
+}
+.red-transporant__text br {
+  margin-top: 10px;
+}
+.height-trick {
+  position: relative;
+}
+.height-trick-2 {
+  position: absolute;
+  top: 40px;
+  left: 35px;
+  right: 35px;
+  height: 40px !important;
+}
+.height-trick-2_erii {
+  left: 72px !important;
+  right: 72px !important;
 }
 /* -------= main image =------- */
 /* -------= simple text =------- */
@@ -321,13 +339,13 @@ textarea {
 .ns_serviceinfo__caption-large_nolineheight {
   text-transform: uppercase;
   font-family: 'Ubuntu-Medium';
-  font-size: 24px;
-  line-height: 29px;
   text-align: center;
   margin-bottom: 45px;
 }
-.ns_serviceinfo__caption-large_nolineheight p {
+.ns_serviceinfo__caption-large_nolineheight h2 {
   margin: 0;
+  font-size: 24px;
+  line-height: 29px;
 }
 .ns_serviceinfo__caption-small_nolineheight {
   text-transform: uppercase;
@@ -336,8 +354,9 @@ textarea {
   text-align: center;
   margin-bottom: 15px;
 }
-.ns_serviceinfo__caption-small_nolineheight p {
+.ns_serviceinfo__caption-small_nolineheight h2 {
   margin: 0;
+  font-size: 18px;
 }
 /* -------= simple text =------- */
 /* -------= our advantages =------- */
@@ -1035,26 +1054,32 @@ textarea {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Ubuntu-Medium';
-  font-size: 18px;
   margin-top: 50px;
   margin-bottom: 10px;
+}
+.ns_orderinfo__caption-large h2 {
+  font-size: 18px !important;
 }
 .ns_orderinfo__caption-small {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Ubuntu-Medium';
-  font-size: 18px;
   margin-top: 30px;
   margin-bottom: 10px;
+}
+.ns_orderinfo__caption-small h2 {
+  font-size: 18px !important;
 }
 /* -------= order info =------- */
 /* -------= expertise =------- */
 .ns_expertise__header {
   font-family: 'Ubuntu-Medium';
-  font-size: 18px;
   text-transform: uppercase;
   text-align: center;
   margin-top: 60px;
+}
+.ns_expertise__header h2 {
+  font-size: 18px;
 }
 .ns_expertise__header span br {
   padding: 0;
@@ -1252,11 +1277,11 @@ textarea {
   padding-bottom: 20px;
   text-transform: uppercase;
   font-family: 'Ubuntu-Medium';
-  font-size: 12px;
 }
-.expertise_text p {
+.expertise_text h3 {
   text-align: center;
   margin-top: 4px;
+  font-size: 12px;
 }
 .ns_expertise__list-text {
   font-family: 'Ubuntu';
@@ -2498,14 +2523,19 @@ body {
   font-family: 'Ubuntu-Medium';
   font-size: 14px;
 }
-.hex-serviceinfo-text p {
+.hex-serviceinfo-text h2 {
+  margin-top: 20px;
+  margin-bottom: 14px;
+  line-height: 1.4;
+  font-family: 'Ubuntu-Medium';
+  font-size: 14px;
   text-align: center;
 }
 .hover-text {
   color: #282828;
   text-decoration: none;
 }
-.hover-text:hover .hex-serviceinfo-text p {
+.hover-text:hover .hex-serviceinfo-text h2 {
   color: #df1f26;
   text-decoration: none;
 }
@@ -2524,6 +2554,9 @@ body {
   margin-bottom: 22px;
   padding-left: 0;
   padding-right: 0;
+}
+.header-text h2 {
+  font-size: 18px;
 }
 .ns_maincontent__margin-bottom {
   margin-bottom: 15px;
