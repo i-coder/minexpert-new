@@ -227,7 +227,7 @@ textarea {
 /* -------= variables =------- */
 /* -------= main image =------- */
 .main-image {
-  background: url('../../static/img/mainimg/main_epd.png') no-repeat center center /*fixed*/;
+  background: url('../../static/img/mainimg/back_epd.jpg') no-repeat center center /*fixed*/;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -239,7 +239,7 @@ textarea {
   z-index: -10;
 }
 .main-image__pattern {
-  background: url('../../static/img/mainimg/pattern.png');
+  background: url('../../static/img/mainimg/pattern_main_img.jpg');
   background-repeat: repeat;
   background-position: center center;
   width: 100%;
@@ -348,6 +348,7 @@ textarea {
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 5px;
+  text-transform: uppercase;
 }
 .our-advantages-text {
   margin: 0;
@@ -361,7 +362,7 @@ textarea {
   padding-left: 30px;
 }
 .width-hack {
-  width: 100% !important;
+  margin-left: 15px;
 }
 /* примесь для картинки в меню преимущества */
 .wwu-img-globus {
@@ -408,7 +409,7 @@ textarea {
   z-index: -10;
 }
 .dark-divider__pattern {
-  background: url('../../static/img/darkdivider/pattern2.png');
+  background: url('../../static/img/darkdivider/pattern_vrezka.jpg');
   background-repeat: repeat;
   background-position: center center;
   width: 100%;
@@ -492,16 +493,62 @@ textarea {
 /*-- телефоны --*/
 @media screen and (max-width: 768px) {
   .dark-divider {
-    height: 200vh;
-    min-height: 315px;
-    max-height: 315px;
+    height: 100vh;
+    min-height: 215px;
+    max-height: 215px;
   }
   .dark-divider__pattern {
-    height: 200vh;
-    min-height: 315px;
-    max-height: 315px;
+    height: 100vh;
+    min-height: 215px;
+    max-height: 215px;
   }
 }
+@media screen and (min-width: 401px) and (max-width: 560px) {
+  .dark-divider {
+    height: 100vh;
+    min-height: 265px;
+    max-height: 265px;
+  }
+  .dark-divider__pattern {
+    height: 100vh;
+    min-height: 265px;
+    max-height: 265px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .dark-divider {
+    height: 100vh;
+    min-height: 285px;
+    max-height: 285px;
+  }
+  .dark-divider__pattern {
+    height: 100vh;
+    min-height: 285px;
+    max-height: 285px;
+  }
+}
+@media screen and (min-width: 3px) and (max-width: 299px) {
+  .dark-divider {
+    height: 100vh;
+    min-height: 295px;
+    max-height: 295px;
+  }
+  .dark-divider__pattern {
+    height: 100vh;
+    min-height: 295px;
+    max-height: 295px;
+  }
+}
+/*.dark-divider {
+        height:     @dark-divider-height + 100px;
+        min-height: @dark-divider-min-height + 100px;
+        max-height: @dark-divider-max-height + 100px;
+    }
+    .dark-divider__pattern {
+        height:     @dark-divider-height + 100px;
+        min-height: @dark-divider-min-height + 100px;
+        max-height: @dark-divider-max-height + 100px;
+    }*/
 /*-- телефоны --*/
 /* -------= dark-divider =------- */
 /* -------= order info =------- */
@@ -526,7 +573,7 @@ textarea {
   z-index: -9;
 }
 .ns_orderinfo_3rdback {
-  background: url('../../static/img/orderinfo/bg-3rd.png');
+  background: url('../../static/img/orderinfo/pattern_img.png');
   background-repeat: repeat;
   background-position: center center;
   width: 100%;
@@ -1236,7 +1283,7 @@ textarea {
 /* -------= variables =------- */
 /* -------= main image =------- */
 .main-image_esd {
-  background: url('../../static/img/mainimg/main_esd.png') no-repeat center center /*fixed*/;
+  background: url('../../static/img/mainimg/back_esd.jpg') no-repeat center center /*fixed*/;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1518,10 +1565,6 @@ body {
 }
 /* -------= logoblock =------- */
 /* -------= navbar =------- */
-/*.ns_navbar {
-    background-color: @main-dark-color;
-    z-index: 1000;
-}*/
 .navbar-delete-styles {
   background-color: #282828;
   border-color: transparent;
@@ -1529,6 +1572,7 @@ body {
   margin-bottom: 0;
   border-radius: 0;
   z-index: 1000;
+  border: none !important;
 }
 .navbar-custom {
   border: none;
@@ -1640,6 +1684,21 @@ body {
     bottom: 0;
     margin: auto;
   }
+  .q_peopleCarousel .mainimg-1-transporant {
+    top: 15% !important;
+  }
+  .q_peopleCarousel .mainimg-2-transporant {
+    top: 10% !important;
+  }
+  .q_peopleCarousel .mainimg-3-transporant {
+    top: 15% !important;
+  }
+  .q_peopleCarousel .mainimg-4-transporant {
+    top: 15% !important;
+  }
+  .q_peopleCarousel .mainimg-5-transporant {
+    top: 2% !important;
+  }
   .q_peopleCarouselImg {
     width: 100%;
     height: 100%;
@@ -1690,6 +1749,7 @@ body {
   }
   .slider-red-block__text-link a:hover {
     color: #ffffff;
+    text-decoration: none;
   }
 }
 @media screen and (min-width: 993px) and (max-width: 1200px) {
@@ -1708,16 +1768,32 @@ body {
   .q_peopleCarousel {
     max-height: 397px;
     overflow: hidden;
+    position: relative;
   }
-  .q_peopleCarouselImg {
-    /*width: 100%;*/
-    height: 100%;
-  }
-  .my-carousel-caption {
+  .q_peopleCarousel .my-carousel-caption {
     position: absolute;
     right: 1%;
     left: 10%;
     top: 5%;
+  }
+  .q_peopleCarousel .mainimg-1-transporant {
+    top: 15% !important;
+  }
+  .q_peopleCarousel .mainimg-2-transporant {
+    top: 10% !important;
+  }
+  .q_peopleCarousel .mainimg-3-transporant {
+    top: 15% !important;
+  }
+  .q_peopleCarousel .mainimg-4-transporant {
+    top: 15% !important;
+  }
+  .q_peopleCarousel .mainimg-5-transporant {
+    top: 5% !important;
+  }
+  .q_peopleCarouselImg {
+    /*width: 100%;*/
+    height: 100%;
   }
   .transJumbotron {
     opacity: 0.95;
@@ -1742,12 +1818,14 @@ body {
     line-height: 25px;
     margin-top: 25px;
     margin-bottom: 15px;
+    padding-left: 15px;
   }
   .slider-red-block__text {
     font-family: 'Ubuntu';
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 15px;
+    padding-left: 15px;
   }
   .slider-red-block__text .text_paragraph {
     margin: 0;
@@ -1758,6 +1836,7 @@ body {
     font-size: 14px;
     line-height: 14px;
     margin-bottom: 25px;
+    padding-left: 15px;
   }
   .slider-red-block__text-link a {
     color: #ffffff;
@@ -1765,6 +1844,7 @@ body {
   }
   .slider-red-block__text-link a:hover {
     color: #ffffff;
+    text-decoration: none;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 993px) {
@@ -1773,6 +1853,27 @@ body {
     max-height: 397px;
     overflow: hidden;
     position: relative;
+  }
+  .q_peopleCarousel .my-carousel-caption {
+    position: absolute;
+    right: 1%;
+    left: 10%;
+    top: 5%;
+  }
+  .q_peopleCarousel .mainimg-1-transporant {
+    top: 15% !important;
+  }
+  .q_peopleCarousel .mainimg-2-transporant {
+    top: 10% !important;
+  }
+  .q_peopleCarousel .mainimg-3-transporant {
+    top: 15% !important;
+  }
+  .q_peopleCarousel .mainimg-4-transporant {
+    top: 15% !important;
+  }
+  .q_peopleCarousel .mainimg-5-transporant {
+    top: 5% !important;
   }
   .q_peopleCarousel img {
     display: block;
@@ -1788,12 +1889,6 @@ body {
     /*width: 100%;*/
     height: 100%;
   }
-  .my-carousel-caption {
-    position: absolute;
-    right: 1%;
-    left: 10%;
-    top: 5%;
-  }
   .transJumbotron {
     opacity: 0.95;
     filter: alpha(opacity=95);
@@ -1817,12 +1912,14 @@ body {
     line-height: 25px;
     margin-top: 25px;
     margin-bottom: 15px;
+    padding-left: 15px;
   }
   .slider-red-block__text {
     font-family: 'Ubuntu';
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 15px;
+    padding-left: 15px;
   }
   .slider-red-block__text .text_paragraph {
     margin: 0;
@@ -1833,6 +1930,7 @@ body {
     font-size: 14px;
     line-height: 14px;
     margin-bottom: 25px;
+    padding-left: 15px;
   }
   .slider-red-block__text-link a {
     color: #ffffff;
@@ -1840,6 +1938,7 @@ body {
   }
   .slider-red-block__text-link a:hover {
     color: #ffffff;
+    text-decoration: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1852,6 +1951,27 @@ body {
     overflow: hidden;
     position: relative;
   }
+  .q_peopleCarousel .my-carousel-caption {
+    position: absolute;
+    right: 1%;
+    left: 2%;
+    top: 0;
+  }
+  .q_peopleCarousel .mainimg-1-transporant {
+    top: 15% !important;
+  }
+  .q_peopleCarousel .mainimg-2-transporant {
+    top: 10% !important;
+  }
+  .q_peopleCarousel .mainimg-3-transporant {
+    top: 15% !important;
+  }
+  .q_peopleCarousel .mainimg-4-transporant {
+    top: 15% !important;
+  }
+  .q_peopleCarousel .mainimg-5-transporant {
+    top: 0 !important;
+  }
   .q_peopleCarousel img {
     display: block;
     height: auto;
@@ -1860,6 +1980,7 @@ body {
   }
   .q_peopleCarouselImg {
     /*width: 100%;*/
+    min-height: 330px;
     height: 100%;
   }
   .my-carousel-caption {
@@ -1885,20 +2006,23 @@ body {
     /*background-color: #ca2428;*/
     text-align: left;
     margin-left: 6px;
-    padding-left: 1px;
+    padding-left: 10px;
+    padding-top: 5px;
   }
   .slider-red-block__header {
     font-family: 'Ubuntu-Medium';
     font-size: 20px;
     line-height: 20px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-left: 15px;
   }
   .slider-red-block__text {
     font-family: 'Ubuntu';
     font-size: 15px;
     line-height: 15px;
     margin-bottom: 8px;
+    padding-left: 15px;
   }
   .slider-red-block__text .text_paragraph {
     margin: 0;
@@ -1908,7 +2032,8 @@ body {
     font-family: 'Ubuntu';
     font-size: 15px;
     line-height: 15px;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
+    padding-left: 15px;
   }
   .slider-red-block__text-link a {
     color: #ffffff;
@@ -1916,6 +2041,7 @@ body {
   }
   .slider-red-block__text-link a:hover {
     color: #ffffff;
+    text-decoration: none;
   }
 }
 .carousel-indicators li {
@@ -1933,6 +2059,8 @@ body {
   margin-right: 0;
   background-color: #fff;
 }
+/* -------= заданные в ручную отступы для слайдов =------- */
+/* -------= заданные в ручную отступы для слайдов =------- */
 /* -------= bootstrap native slider =------- */
 /* -------= slider =------- */
 /* -------= menu services =------- */
@@ -3017,7 +3145,7 @@ body {
 /* -------= variables =------- */
 /* -------= main image =------- */
 .main-image_erii {
-  background: url('../../static/img/mainimg/main_erii.png') no-repeat center center /*fixed*/;
+  background: url('../../static/img/mainimg/back_erii.jpg') no-repeat center center /*fixed*/;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3252,6 +3380,7 @@ body {
 .privelege-text {
   margin: 0;
   padding: 0;
+  padding-left: 15px;
   text-transform: none;
   font-family: 'Ubuntu';
   font-size: 14px;
@@ -3280,3 +3409,6 @@ body {
   }
 }
 /* -------= privilege =------- */
+.height-hack {
+  height: 200px !important;
+}

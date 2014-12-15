@@ -17,7 +17,7 @@
 
 /* -------= main image =------- */
 .main-image {
-    background: url('../../static/img/mainimg/main_epd.png') no-repeat center center /*fixed*/;
+    background: url('../../static/img/mainimg/back_epd.jpg') no-repeat center center /*fixed*/;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -29,7 +29,7 @@
     z-index: -10;
 }
 .main-image__pattern {
-	background:url('../../static/img/mainimg/pattern.png');
+	background:url('../../static/img/mainimg/pattern_main_img.jpg');
 	background-repeat: repeat;
 	background-position: center center;
     width: 100%;
@@ -152,6 +152,7 @@
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 .our-advantages-text {
     margin: 0;
@@ -165,7 +166,7 @@
     padding-left: 30px;
 }
 .width-hack {
-    width: 100% !important;
+    margin-left: 15px;
 }
 /* примесь для картинки в меню преимущества */
 .wwu-img-globus {
@@ -191,7 +192,8 @@
     z-index: -10;
 }
 .dark-divider__pattern {
-	background:url('../../static/img/darkdivider/pattern2.png');
+//	background:url('../../static/img/darkdivider/pattern2.png');
+	background:url('../../static/img/darkdivider/pattern_vrezka.jpg');
 	background-repeat: repeat;
 	background-position: center center;
     width: 100%;
@@ -242,17 +244,66 @@
 }
 /*-- телефоны --*/
 @media screen and (max-width: 768px) {
-.dark-divider {
-    height:     @dark-divider-height + 100px;
-    min-height: @dark-divider-min-height + 100px;
-    max-height: @dark-divider-max-height + 100px;
+    .dark-divider {
+        height:     @dark-divider-height;
+        min-height: @dark-divider-min-height;
+        max-height: @dark-divider-max-height;
+    }
+    .dark-divider__pattern {
+        height:     @dark-divider-height;
+        min-height: @dark-divider-min-height;
+        max-height: @dark-divider-max-height;
+    }
 }
-.dark-divider__pattern {
-    height:     @dark-divider-height + 100px;
-    min-height: @dark-divider-min-height + 100px;
-    max-height: @dark-divider-max-height + 100px;
+@media screen and (min-width: 401px) and (max-width: 560px) {
+    .dark-divider {
+        height:     @dark-divider-height;
+        min-height: @dark-divider-min-height + 50px;
+        max-height: @dark-divider-max-height + 50px;
+    }
+    .dark-divider__pattern {
+        height:     @dark-divider-height;
+        min-height: @dark-divider-min-height + 50px;
+        max-height: @dark-divider-max-height + 50px;
+    }
 }
+@media screen and (min-width: 300px) and (max-width: 400px) {
+    .dark-divider {
+        height:     @dark-divider-height;
+        min-height: @dark-divider-min-height + 70px;
+        max-height: @dark-divider-max-height + 70px;
+    }
+    .dark-divider__pattern {
+        height:     @dark-divider-height;
+        min-height: @dark-divider-min-height + 70px;
+        max-height: @dark-divider-max-height + 70px;
+    }
 }
+@media screen and (min-width: 3px) and (max-width: 299px) {
+    .dark-divider {
+        height:     @dark-divider-height;
+        min-height: @dark-divider-min-height + 80px;
+        max-height: @dark-divider-max-height + 80px;
+    }
+    .dark-divider__pattern {
+        height:     @dark-divider-height;
+        min-height: @dark-divider-min-height + 80px;
+        max-height: @dark-divider-max-height + 80px;
+    }
+}
+/*.dark-divider {
+        height:     @dark-divider-height + 100px;
+        min-height: @dark-divider-min-height + 100px;
+        max-height: @dark-divider-max-height + 100px;
+    }
+    .dark-divider__pattern {
+        height:     @dark-divider-height + 100px;
+        min-height: @dark-divider-min-height + 100px;
+        max-height: @dark-divider-max-height + 100px;
+    }*/
+
+
+
 /*-- телефоны --*/
 /* -------= dark-divider =------- */
 
@@ -279,7 +330,7 @@
     z-index: -9;
 }
 .ns_orderinfo_3rdback {
-	background:url('../../static/img/orderinfo/bg-3rd.png');
+	background:url('../../static/img/orderinfo/pattern_img.png');
 	background-repeat: repeat;
 	background-position: center center;
     width: 100%;
