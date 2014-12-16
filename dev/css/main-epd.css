@@ -220,6 +220,7 @@ textarea {
 /* -------= примесь для рейтинга =------- */
 /* -------= примесь для рейтинга =------- */
 /* -------= примесь для элемента сервиного меню =------- */
+/* примесь для инфо меню */
 /* -------= imports =------- */
 /* -------= imports =------- */
 /* -------= variables =------- */
@@ -2364,7 +2365,6 @@ body {
     page-break-after: avoid;
   }
 }
-/* примесь для инфо меню */
 /* -------= imports =------- */
 /* -------= variables =------- */
 /* -------= variables =------- */
@@ -2565,9 +2565,8 @@ body {
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
-  height: 100vh;
   min-height: 215px;
-  max-height: 215px;
+  max-height: 800px;
   z-index: -10;
 }
 .dark-divider__pattern {
@@ -2575,9 +2574,8 @@ body {
   background-repeat: repeat;
   background-position: center center;
   width: 100%;
-  height: 100vh;
   min-height: 215px;
-  max-height: 215px;
+  max-height: 800px;
   z-index: -9;
 }
 .backcall-button {
@@ -2591,6 +2589,7 @@ body {
     @font-color: #ffffff       = цвет шрифта
      */
   text-transform: uppercase;
+  margin-bottom: 30px;
   width: 247px;
   height: 42px;
   text-align: center;
@@ -2652,66 +2651,6 @@ body {
   margin-top: 5%;
   margin-bottom: 25px;
 }
-/*-- телефоны --*/
-@media screen and (max-width: 768px) {
-  .dark-divider {
-    height: 100vh;
-    min-height: 215px;
-    max-height: 215px;
-  }
-  .dark-divider__pattern {
-    height: 100vh;
-    min-height: 215px;
-    max-height: 215px;
-  }
-}
-@media screen and (min-width: 401px) and (max-width: 560px) {
-  .dark-divider {
-    height: 100vh;
-    min-height: 265px;
-    max-height: 265px;
-  }
-  .dark-divider__pattern {
-    height: 100vh;
-    min-height: 265px;
-    max-height: 265px;
-  }
-}
-@media screen and (min-width: 300px) and (max-width: 400px) {
-  .dark-divider {
-    height: 100vh;
-    min-height: 285px;
-    max-height: 285px;
-  }
-  .dark-divider__pattern {
-    height: 100vh;
-    min-height: 285px;
-    max-height: 285px;
-  }
-}
-@media screen and (min-width: 3px) and (max-width: 299px) {
-  .dark-divider {
-    height: 100vh;
-    min-height: 295px;
-    max-height: 295px;
-  }
-  .dark-divider__pattern {
-    height: 100vh;
-    min-height: 295px;
-    max-height: 295px;
-  }
-}
-/*.dark-divider {
-        height:     @dark-divider-height + 100px;
-        min-height: @dark-divider-min-height + 100px;
-        max-height: @dark-divider-max-height + 100px;
-    }
-    .dark-divider__pattern {
-        height:     @dark-divider-height + 100px;
-        min-height: @dark-divider-min-height + 100px;
-        max-height: @dark-divider-max-height + 100px;
-    }*/
-/*-- телефоны --*/
 /* -------= dark-divider =------- */
 /* -------= order info =------- */
 .ns_orderinfo_1stback {

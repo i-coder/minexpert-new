@@ -10,7 +10,7 @@
 @main-image-max-height: 397px;
 @dark-divider-height: 100vh;
 @dark-divider-min-height: 215px;
-@dark-divider-max-height: 215px;
+@dark-divider-max-height: 800px;
 @dark-divider-color: #333333;
 @order-info-height: 583px;
 /* -------= variables =------- */
@@ -208,7 +208,7 @@
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
-    height:     @dark-divider-height;
+    //height:     @dark-divider-height;
     min-height: @dark-divider-min-height;
     max-height: @dark-divider-max-height;
     z-index: -10;
@@ -219,7 +219,7 @@
 	background-repeat: repeat;
 	background-position: center center;
     width: 100%;
-    height:     @dark-divider-height;
+    //height:     @dark-divider-height;
     min-height: @dark-divider-min-height;
     max-height: @dark-divider-max-height;
     z-index: -9;
@@ -235,6 +235,7 @@
     @font-color: #ffffff       = цвет шрифта
      */
     text-transform: uppercase;
+    margin-bottom: 30px;
     .original-button (
         247px,
         42px,
@@ -262,71 +263,7 @@
     margin-bottom: 25px;
 }
 .dark-divider__buttonrow {
-
 }
-/*-- телефоны --*/
-@media screen and (max-width: 768px) {
-    .dark-divider {
-        height:     @dark-divider-height;
-        min-height: @dark-divider-min-height;
-        max-height: @dark-divider-max-height;
-    }
-    .dark-divider__pattern {
-        height:     @dark-divider-height;
-        min-height: @dark-divider-min-height;
-        max-height: @dark-divider-max-height;
-    }
-}
-@media screen and (min-width: 401px) and (max-width: 560px) {
-    .dark-divider {
-        height:     @dark-divider-height;
-        min-height: @dark-divider-min-height + 50px;
-        max-height: @dark-divider-max-height + 50px;
-    }
-    .dark-divider__pattern {
-        height:     @dark-divider-height;
-        min-height: @dark-divider-min-height + 50px;
-        max-height: @dark-divider-max-height + 50px;
-    }
-}
-@media screen and (min-width: 300px) and (max-width: 400px) {
-    .dark-divider {
-        height:     @dark-divider-height;
-        min-height: @dark-divider-min-height + 70px;
-        max-height: @dark-divider-max-height + 70px;
-    }
-    .dark-divider__pattern {
-        height:     @dark-divider-height;
-        min-height: @dark-divider-min-height + 70px;
-        max-height: @dark-divider-max-height + 70px;
-    }
-}
-@media screen and (min-width: 3px) and (max-width: 299px) {
-    .dark-divider {
-        height:     @dark-divider-height;
-        min-height: @dark-divider-min-height + 80px;
-        max-height: @dark-divider-max-height + 80px;
-    }
-    .dark-divider__pattern {
-        height:     @dark-divider-height;
-        min-height: @dark-divider-min-height + 80px;
-        max-height: @dark-divider-max-height + 80px;
-    }
-}
-/*.dark-divider {
-        height:     @dark-divider-height + 100px;
-        min-height: @dark-divider-min-height + 100px;
-        max-height: @dark-divider-max-height + 100px;
-    }
-    .dark-divider__pattern {
-        height:     @dark-divider-height + 100px;
-        min-height: @dark-divider-min-height + 100px;
-        max-height: @dark-divider-max-height + 100px;
-    }*/
-
-
-
-/*-- телефоны --*/
 /* -------= dark-divider =------- */
 
 /* -------= order info =------- */
